@@ -1,0 +1,11 @@
+C:\Users\Angel\source\repos\Visual_Instru2018\Visual_Instru2018\bin\Debug\Visual_Instru2018.exe.config
+C:\Users\Angel\source\repos\Visual_Instru2018\Visual_Instru2018\bin\Debug\Visual_Instru2018.exe
+C:\Users\Angel\source\repos\Visual_Instru2018\Visual_Instru2018\bin\Debug\Visual_Instru2018.pdb
+C:\Users\Angel\source\repos\Visual_Instru2018\Visual_Instru2018\obj\Debug\Visual_Instru2018.csprojResolveAssemblyReference.cache
+C:\Users\Angel\source\repos\Visual_Instru2018\Visual_Instru2018\obj\Debug\Visual_Instru2018._72Horas.resources
+C:\Users\Angel\source\repos\Visual_Instru2018\Visual_Instru2018\obj\Debug\Visual_Instru2018.Form1.resources
+C:\Users\Angel\source\repos\Visual_Instru2018\Visual_Instru2018\obj\Debug\Visual_Instru2018.Properties.Resources.resources
+C:\Users\Angel\source\repos\Visual_Instru2018\Visual_Instru2018\obj\Debug\Visual_Instru2018.csproj.GenerateResource.cache
+C:\Users\Angel\source\repos\Visual_Instru2018\Visual_Instru2018\obj\Debug\Visual_Instru2018.csproj.CoreCompileInputs.cache
+C:\Users\Angel\source\repos\Visual_Instru2018\Visual_Instru2018\obj\Debug\Visual_Instru2018.exe
+C:\Users\Angel\source\repos\Visual_Instru2018\Visual_Instru2018\obj\Debug\Visual_Instru2018.pdb
