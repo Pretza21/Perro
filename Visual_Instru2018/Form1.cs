@@ -21,7 +21,7 @@ namespace Visual_Instru2018
             serialPort1.PortName = "COM22";
             serialPort1.BaudRate = 9600;
             serialPort1.DtrEnable = true;
-            //serialPort1.Open();
+            serialPort1.Open();
 
             serialPort1.DataReceived += serialPort1_DataReceived;
         }
