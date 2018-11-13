@@ -13,6 +13,7 @@ namespace Visual_Instru2018
 {
     public partial class Form1 : Form
     {
+        TimeSpan time;
         public Form1()
         {
             InitializeComponent();
@@ -47,7 +48,6 @@ namespace Visual_Instru2018
             }
         }
 
-
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -60,7 +60,51 @@ namespace Visual_Instru2018
 
         private void button1_Click(object sender, EventArgs e)
         {
+            PaQueSeLoGocen("00:07:20");
+        }
 
+        public void PaQueSeLoGocen(string PaQueRetocen)
+        {
+            time = TimeSpan.Parse(PaQueRetocen);
+            timeLabel.Text = time.ToString();
+
+            Timer timer = new Timer();
+            timer.Interval = 1000;
+
+            timer.Tick += (a, b) =>
+            {
+                time = time.Subtract(new TimeSpan(0, 0, 1));
+                timeLabel.Text = time.ToString();
+
+                if (time.Minutes == 0 && time.Seconds == 0)
+                {
+                    string message = "Se te terminó el tiempo, rey";
+                    string caption = "Kellogg's iento";
+                    MessageBoxButtons buttons = MessageBoxButtons.OK;
+
+                    DialogResult result;
+
+                    // Muestra mensaje
+                    result = MessageBox.Show(message, caption, buttons, MessageBoxIcon.Exclamation);
+
+                    if (result == System.Windows.Forms.DialogResult.OK)
+                    {
+                        timer.Stop();
+                        Application.Exit();
+                    }
+                }
+            };
+            timer.Start();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            PaQueSeLoGocen("00:04:80");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            PaQueSeLoGocen("00:02:40");
         }
     }
 }
