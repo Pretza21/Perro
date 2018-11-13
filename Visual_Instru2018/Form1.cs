@@ -21,7 +21,7 @@ namespace Visual_Instru2018
             serialPort1.PortName = "COM22";
             serialPort1.BaudRate = 9600;
             serialPort1.DtrEnable = true;
-            serialPort1.Open();
+            //serialPort1.Open();
 
             serialPort1.DataReceived += serialPort1_DataReceived;
         }
@@ -60,8 +60,14 @@ namespace Visual_Instru2018
 
         private void button1_Click(object sender, EventArgs e)
         {
-            PaQueSeLoGocen("00:07:20");
+            PaQueSeLoGocen("00:07:12");
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            PaQueSeLoGocen("00:04:48");
+        }
+
 
         public void PaQueSeLoGocen(string PaQueRetocen)
         {
@@ -97,14 +103,9 @@ namespace Visual_Instru2018
             timer.Start();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button3_Click_1(object sender, EventArgs e)
         {
-            PaQueSeLoGocen("00:04:80");
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            PaQueSeLoGocen("00:02:40");
+            PaQueSeLoGocen("00:02:24");
         }
     }
 }
