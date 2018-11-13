@@ -14,6 +14,10 @@ namespace Visual_Instru2018
     public partial class Form1 : Form
     {
         TimeSpan time;
+        List<int> temperatura;
+        List<int> presion;
+        int temps = 0;
+        int pres = 0;
         public Form1()
         {
             InitializeComponent();
@@ -40,11 +44,13 @@ namespace Visual_Instru2018
             int perro;
             int.TryParse(line, out perro);
             if (perro >= 10 && perro<= 100)
-            {
+            {                
                 label1.Text = "Temperatura";
+                temperatura.Add(perro);
             }
             else if (perro >= 500 && perro<= 1500){
                 label1.Text = "Presion";
+                presion.Add(perro);
             }
         }
 
