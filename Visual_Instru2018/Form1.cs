@@ -15,9 +15,7 @@ namespace Visual_Instru2018
     {
         TimeSpan time;
         List<int> temperatura;
-        List<int> presion;
-        int temps = 0;
-        int pres = 0;
+        List<int> presion;       
         public Form1()
         {
             InitializeComponent();
@@ -47,10 +45,24 @@ namespace Visual_Instru2018
             {                
                 label1.Text = "Temperatura";
                 temperatura.Add(perro);
+                int b = 0;
+                for(int a = 0; a < temperatura.Count; a++)
+                {
+                    b = temperatura.ElementAt(a) + b;
+                }
+                float c = b / temperatura.Count;
+                textTemp.Text = c.ToString();
             }
             else if (perro >= 500 && perro<= 1500){
                 label1.Text = "Presion";
                 presion.Add(perro);
+                int b = 0;
+                for (int a = 0; a < presion.Count; a++)
+                {
+                    b = presion.ElementAt(a) + b;
+                }
+                float c = b / presion.Count;
+                textPres.Text = c.ToString();
             }
         }
 
